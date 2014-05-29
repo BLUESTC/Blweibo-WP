@@ -47,7 +47,7 @@
                 IconUri="\appbar.edit.rest.png" Text="新微博" Click="Edit_Click">
             </shell:ApplicationBarIconButton>
             <shell:ApplicationBarIconButton 
-                IconUri="\appbar.feature.search.rest.png" Text="搜索">
+                IconUri="\appbar.feature.search.rest.png" Text="搜索" Click="Search_Click">
             </shell:ApplicationBarIconButton>
             <shell:ApplicationBarIconButton 
                 IconUri="\appbar.refresh.rest.png" Text="刷新">

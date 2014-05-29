@@ -120,3 +120,5 @@ D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\MultipleQualifiersPerD
 D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\ProjectArchitectures.txt
 D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\MDILProjectFiles.xml
 D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\XapCacheFile.xml
+D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\RegisterPage.g.cs
+D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\SearchPage.g.cs

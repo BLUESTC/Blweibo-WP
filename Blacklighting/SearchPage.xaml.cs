@@ -10,16 +10,11 @@ using Microsoft.Phone.Shell;
 
 namespace Blacklighting
 {
-    public partial class EditPage : PhoneApplicationPage
+    public partial class Page2 : PhoneApplicationPage
     {
-        public EditPage()
+        public Page2()
         {
             InitializeComponent();
-        }
-
-        private void Send_Click(object sender, EventArgs e)
-        {
-            this.NavigationService.Navigate(new Uri("/MessagePage.xaml", UriKind.Relative));
         }
     }
 }

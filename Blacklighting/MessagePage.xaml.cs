@@ -37,6 +37,11 @@ namespace Blacklighting
             
         }
 
+        private void Search_Click(object sender, EventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("/SearchPage.xaml", UriKind.Relative));
+        }
+
         // 用于生成本地化 ApplicationBar 的示例代码
         //private void BuildLocalizedApplicationBar()
         //{
