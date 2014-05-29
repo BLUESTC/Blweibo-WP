@@ -3,11 +3,11 @@
   <XAPFiles>
     <File>resources.pri</File>
     <File>Blacklighting.dll</File>
-    <File>appbar.add.rest.png</File>
-    <File>appbar.edit.rest.png</File>
-    <File>appbar.feature.search.rest.png</File>
-    <File>appbar.feature.settings.rest.png</File>
-    <File>appbar.refresh.rest.png</File>
+    <File>image\appbar.add.rest.png</File>
+    <File>image\appbar.edit.rest.png</File>
+    <File>image\appbar.feature.search.rest.png</File>
+    <File>image\appbar.feature.settings.rest.png</File>
+    <File>image\appbar.refresh.rest.png</File>
     <File>Assets\AlignmentGrid.png</File>
     <File>Assets\BadgeLogo.png</File>
     <File>Assets\Logo.png</File>

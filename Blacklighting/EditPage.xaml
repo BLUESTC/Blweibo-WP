@@ -28,7 +28,7 @@
     </Grid>
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsMenuEnabled="True" IsVisible="True">
-            <shell:ApplicationBarIconButton IconUri="\appbar.add.rest.png" Text="发送" Click="Send_Click">
+            <shell:ApplicationBarIconButton IconUri="\image\appbar.add.rest.png" Text="发送" Click="Send_Click">
             </shell:ApplicationBarIconButton>
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="添加图片">

@@ -91,6 +91,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="API.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -164,11 +165,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="appbar.add.rest.png" />
-    <Content Include="appbar.edit.rest.png" />
-    <Content Include="appbar.feature.search.rest.png" />
-    <Content Include="appbar.feature.settings.rest.png" />
-    <Content Include="appbar.refresh.rest.png" />
+    <Content Include="image\appbar.add.rest.png" />
+    <Content Include="image\appbar.edit.rest.png" />
+    <Content Include="image\appbar.feature.search.rest.png" />
+    <Content Include="image\appbar.feature.settings.rest.png" />
+    <Content Include="image\appbar.refresh.rest.png" />
     <Content Include="Assets\AlignmentGrid.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

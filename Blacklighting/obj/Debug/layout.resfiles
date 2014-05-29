@@ -1,8 +1,3 @@
-appbar.add.rest.png
-appbar.edit.rest.png
-appbar.feature.search.rest.png
-appbar.feature.settings.rest.png
-appbar.refresh.rest.png
 Assets\AlignmentGrid.png
 Assets\ApplicationIcon.png
 Assets\BadgeLogo.png
@@ -17,3 +12,8 @@ Assets\Tiles\FlipCycleTileSmall.png
 Assets\Tiles\IconicTileMediumLarge.png
 Assets\Tiles\IconicTileSmall.png
 Assets\WideLogo.png
+image\appbar.add.rest.png
+image\appbar.edit.rest.png
+image\appbar.feature.search.rest.png
+image\appbar.feature.settings.rest.png
+image\appbar.refresh.rest.png

@@ -41,16 +41,16 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsMenuEnabled="True" IsVisible="True">
             <shell:ApplicationBarIconButton 
-                IconUri="\appbar.feature.settings.rest.png" Text="设置" Click="Option_Click">
+                IconUri="\image\appbar.feature.settings.rest.png" Text="设置" Click="Option_Click">
             </shell:ApplicationBarIconButton>
             <shell:ApplicationBarIconButton 
-                IconUri="\appbar.edit.rest.png" Text="新微博" Click="Edit_Click">
+                IconUri="\image\appbar.edit.rest.png" Text="新微博" Click="Edit_Click">
             </shell:ApplicationBarIconButton>
             <shell:ApplicationBarIconButton 
-                IconUri="\appbar.feature.search.rest.png" Text="搜索" Click="Search_Click">
+                IconUri="\image\appbar.feature.search.rest.png" Text="搜索" Click="Search_Click">
             </shell:ApplicationBarIconButton>
             <shell:ApplicationBarIconButton 
-                IconUri="\appbar.refresh.rest.png" Text="刷新">
+                IconUri="\image\appbar.refresh.rest.png" Text="刷新">
             </shell:ApplicationBarIconButton>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>

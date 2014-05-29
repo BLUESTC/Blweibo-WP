@@ -85,20 +85,20 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\zh-Hant\System.Windows.Interactivity.resources.dll">
       <PackagePath>zh-Hant\System.Windows.Interactivity.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\Blacklighting\Blacklighting\appbar.add.rest.png">
-      <PackagePath>appbar.add.rest.png</PackagePath>
+    <AppxPackagedFile Include="D:\Documents\GitHub\Blacklighting\Blacklighting\image\appbar.add.rest.png">
+      <PackagePath>image\appbar.add.rest.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\Blacklighting\Blacklighting\appbar.edit.rest.png">
-      <PackagePath>appbar.edit.rest.png</PackagePath>
+    <AppxPackagedFile Include="D:\Documents\GitHub\Blacklighting\Blacklighting\image\appbar.edit.rest.png">
+      <PackagePath>image\appbar.edit.rest.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\Blacklighting\Blacklighting\appbar.feature.search.rest.png">
-      <PackagePath>appbar.feature.search.rest.png</PackagePath>
+    <AppxPackagedFile Include="D:\Documents\GitHub\Blacklighting\Blacklighting\image\appbar.feature.search.rest.png">
+      <PackagePath>image\appbar.feature.search.rest.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\Blacklighting\Blacklighting\appbar.feature.settings.rest.png">
-      <PackagePath>appbar.feature.settings.rest.png</PackagePath>
+    <AppxPackagedFile Include="D:\Documents\GitHub\Blacklighting\Blacklighting\image\appbar.feature.settings.rest.png">
+      <PackagePath>image\appbar.feature.settings.rest.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\Blacklighting\Blacklighting\appbar.refresh.rest.png">
-      <PackagePath>appbar.refresh.rest.png</PackagePath>
+    <AppxPackagedFile Include="D:\Documents\GitHub\Blacklighting\Blacklighting\image\appbar.refresh.rest.png">
+      <PackagePath>image\appbar.refresh.rest.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\Blacklighting\Blacklighting\Assets\AlignmentGrid.png">
       <PackagePath>Assets\AlignmentGrid.png</PackagePath>

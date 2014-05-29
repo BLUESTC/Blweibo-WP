@@ -1,11 +1,11 @@
-﻿<xapCache source="D:\Documents\GitHub\Blacklighting\Blacklighting\Bin\Debug\Blacklighting_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2014/5/29 22:44:15">
-  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="2014/5/29 22:34:52" />
-  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\Blacklighting.dll" archivePath="Blacklighting.dll" lastWriteTime="2014/5/29 22:44:14" />
-  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\appbar.add.rest.png" archivePath="appbar.add.rest.png" lastWriteTime="2014/5/25 0:43:27" />
-  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\appbar.edit.rest.png" archivePath="appbar.edit.rest.png" lastWriteTime="2014/5/25 0:46:41" />
-  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\appbar.feature.search.rest.png" archivePath="appbar.feature.search.rest.png" lastWriteTime="2014/5/25 0:47:40" />
-  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\appbar.feature.settings.rest.png" archivePath="appbar.feature.settings.rest.png" lastWriteTime="2014/5/25 0:35:20" />
-  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\appbar.refresh.rest.png" archivePath="appbar.refresh.rest.png" lastWriteTime="2014/5/25 0:45:39" />
+﻿<xapCache source="D:\Documents\GitHub\Blacklighting\Blacklighting\Bin\Debug\Blacklighting_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2014/5/30 1:22:46">
+  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="2014/5/30 1:22:10" />
+  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\Blacklighting.dll" archivePath="Blacklighting.dll" lastWriteTime="2014/5/30 1:22:44" />
+  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\image\appbar.add.rest.png" archivePath="image\appbar.add.rest.png" lastWriteTime="2014/5/25 0:43:27" />
+  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\image\appbar.edit.rest.png" archivePath="image\appbar.edit.rest.png" lastWriteTime="2014/5/25 0:46:41" />
+  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\image\appbar.feature.search.rest.png" archivePath="image\appbar.feature.search.rest.png" lastWriteTime="2014/5/25 0:47:40" />
+  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\image\appbar.feature.settings.rest.png" archivePath="image\appbar.feature.settings.rest.png" lastWriteTime="2014/5/25 0:35:20" />
+  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\image\appbar.refresh.rest.png" archivePath="image\appbar.refresh.rest.png" lastWriteTime="2014/5/25 0:45:39" />
   <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="2014/5/25 0:17:18" />
   <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="2014/5/25 0:17:18" />
   <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="2014/5/25 0:17:18" />
@@ -24,6 +24,6 @@
   <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\Microsoft.Expression.Interactions.dll" archivePath="Microsoft.Expression.Interactions.dll" lastWriteTime="2012/9/25 1:41:02" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="2012/9/25 1:41:02" />
   <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2014/5/27 0:50:52" />
-  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="2014/5/29 22:44:15" />
-  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="2014/5/29 22:34:52" />
+  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="2014/5/30 1:22:46" />
+  <file source="D:\Documents\GitHub\Blacklighting\Blacklighting\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="2014/5/30 1:22:11" />
 </xapCache>
