@@ -24,12 +24,12 @@
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="新微博" Style="{StaticResource PhoneTextNormalStyle}"/>
         </StackPanel>
-
-        <Button Content="发送" HorizontalAlignment="Right" Margin="0,0,0,40" Grid.Row="1" VerticalAlignment="Bottom"/>
         <TextBox HorizontalAlignment="Left" Height="350" Margin="14,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="456"/>
     </Grid>
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsMenuEnabled="True" IsVisible="True">
+            <shell:ApplicationBarIconButton IconUri="\appbar.add.rest.png" Text="发送">
+            </shell:ApplicationBarIconButton>
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="添加图片">
                 </shell:ApplicationBarMenuItem>

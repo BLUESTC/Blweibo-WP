@@ -32,7 +32,7 @@
             <TextBlock HorizontalAlignment="Left" Margin="75,295,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" Height="45" Width="80" FontSize="36"/>
             <TextBox HorizontalAlignment="Left" Height="60" Margin="155,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" FontSize="20"/>
             <CheckBox Content="记住密码" HorizontalAlignment="Left" Margin="155,350,0,0" VerticalAlignment="Top" Height="75" Width="166" FontSize="20" BorderThickness="1"/>
-            <Button Content="登  录" HorizontalAlignment="Left" Margin="180,425,0,0" VerticalAlignment="Top">
+            <Button Content="登  录" HorizontalAlignment="Left" Margin="75,425,0,0" VerticalAlignment="Top">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="Click">
                         <ec:NavigateToPageAction TargetPage="/MessagePage.xaml"/>
@@ -40,7 +40,9 @@
                 </i:Interaction.Triggers>
             </Button>
             <PasswordBox HorizontalAlignment="Left" Margin="155,290,0,0" VerticalAlignment="Top" Height="60" Width="220"/>
-            <TextBlock HorizontalAlignment="Left" Margin="345,610,0,0" TextWrapping="Wrap" Text="忘记密码？" VerticalAlignment="Top" Height="40" Width="100"/>
+            <Button Content="注  册" HorizontalAlignment="Left" Margin="266,425,0,0" VerticalAlignment="Top"/>
+            <Button Content="忘记密码？" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" FontSize="18" BorderThickness="0"/>
+            <Image Height="100" Margin="183,100,173,0" VerticalAlignment="Top" Width="100" HorizontalAlignment="Center"/>
 
         </Grid>
     </Grid>

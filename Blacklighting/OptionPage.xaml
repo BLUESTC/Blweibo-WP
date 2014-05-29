@@ -22,19 +22,13 @@
             CacheMode="{x:Null}" Header="选项" 
             HorizontalAlignment="Left" 
             Margin="10,28,-342,-620" Width="460">
-                <Grid/>
-            </phone:PivotItem>
-            <phone:PivotItem 
-            CacheMode="{x:Null}" Header="通知" 
-            HorizontalAlignment="Left" 
-            Margin="10,28,-342,-620" Width="460">
-                <Grid/>
+                <ListBox Height="591" VerticalAlignment="Top" Width="460"/>
             </phone:PivotItem>
             <phone:PivotItem 
             CacheMode="{x:Null}" Header="支持" 
             HorizontalAlignment="Left" 
             Margin="10,28,-342,-620" Width="460">
-                <Grid/>
+                <TextBlock Margin="0,-2,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="594" Width="460"/>
             </phone:PivotItem>
         </phone:Pivot>
         <!--LayoutRoot 是包含所有页面内容的根网格-->
