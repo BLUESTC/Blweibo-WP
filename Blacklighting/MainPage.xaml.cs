@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using Blacklighting.Tools;
 
 namespace Blacklighting
 {
@@ -17,14 +18,16 @@ namespace Blacklighting
             InitializeComponent();
         }
 
-        private void loginButton_Click(object sender, RoutedEventArgs e)
+        private void Login()
         {
-            this.NavigationService.Navigate(new Uri("/MessagePage.xaml", UriKind.Relative));
+            OAuthLogin oAuthLogin = new OAuthLogin();
+            oAuthLogin.getRequestToken();
+            
         }
 
-        private void registerButton_Click(object sender, RoutedEventArgs e)
+        private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("/RegisterPage.xaml", UriKind.Relative));
+            Login();
         }
     }
 }

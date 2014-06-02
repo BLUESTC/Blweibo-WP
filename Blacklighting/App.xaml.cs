@@ -7,6 +7,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Blacklighting.Resources;
+using Blacklighting.Tools;
 
 namespace Blacklighting
 {
@@ -54,7 +55,6 @@ namespace Blacklighting
                 // 并且消耗电池电量。
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
-
         }
 
         // 当协定激活(如文件打开或保存选取器) 

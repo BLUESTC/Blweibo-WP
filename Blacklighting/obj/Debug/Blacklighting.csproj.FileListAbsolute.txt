@@ -95,7 +95,6 @@ D:\Documents\GitHub\Blacklighting\Blacklighting\Bin\Debug\ko\System.Windows.Inte
 D:\Documents\GitHub\Blacklighting\Blacklighting\Bin\Debug\ru\System.Windows.Interactivity.resources.dll
 D:\Documents\GitHub\Blacklighting\Blacklighting\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
 D:\Documents\GitHub\Blacklighting\Blacklighting\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
-D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\Blacklighting.csprojResolveAssemblyReference.cache
 D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\App.g.cs
 D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\EditPage.g.cs
 D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\MainPage.g.cs
@@ -122,3 +121,4 @@ D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\MDILProjectFiles.xml
 D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\XapCacheFile.xml
 D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\RegisterPage.g.cs
 D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\SearchPage.g.cs
+D:\Documents\GitHub\Blacklighting\Blacklighting\obj\Debug\Blacklighting.csprojResolveAssemblyReference.cache

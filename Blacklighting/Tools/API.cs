@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace Blacklighting
 {
-    /**
- * statusnet API，详情见下面的网址，如果没有提及，POST与GET都是可行的，参数没有提及的话可选
- * 
- * @author 亚军
- * @see https://dev.twitter.com/docs/api/1.1
- * @see http://status.net/wiki/Twitter-compatible_API
- */
+       /**
+        * statusnet API，详情见下面的网址，如果没有提及，POST与GET都是可行的，参数没有提及的话可选
+        * 
+        * @see https://dev.twitter.com/docs/api/1.1
+        * @see http://status.net/wiki/Twitter-compatible_API
+        */
 
     class API
     {
+        public const String CONSUMER_KEY = "cec2b3a985fea921fc600a00471b6d3f";
+        public const String CONSUMER_SECRET = "8d2754dc4e8d0ebf8583be1d878b9319";
         public const String API_FORMAT = "json";
         public const String API_ROOT = "http://studio.scie.in/blacklighting/BLK/statusnet-1.1.1/index.php/api/";
         // 以下是twitter 移植API，注意，有些没有实现
