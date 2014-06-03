@@ -143,6 +143,8 @@ namespace Blacklighting.Tools
             return result;
         }
 
+ 
+
         /// <summary> 
         /// This is a different Url Encode implementation since the default .NET one outputs the percent encoding in lower case. 
         /// While this is not a problem with the percent encoding spec, it is used in upper case throughout OAuth 
@@ -216,7 +218,7 @@ namespace Blacklighting.Tools
         /// <returns>The signature base</returns> 
         public string GenerateSignatureBase(Uri url, string consumerKey, 
             string token, string tokenSecret, string httpMethod, 
-            string timeStamp, string nonce, string signatureType, 
+            string timeStamp, string nonce, string signatureType, string callBack,
             out string normalizedUrl, out string normalizedRequestParameters)
         {
             if (token == null)
@@ -243,6 +245,7 @@ namespace Blacklighting.Tools
             normalizedRequestParameters = null;
 
             List<QueryParameter> parameters = GetQueryParameters(url.Query);
+            parameters.Add(new QueryParameter(OAuthCallbackKey, callBack));
             parameters.Add(new QueryParameter(OAuthVersionKey, OAuthVersion));
             parameters.Add(new QueryParameter(OAuthNonceKey, nonce));
             parameters.Add(new QueryParameter(OAuthTimestampKey, timeStamp));
@@ -296,7 +299,7 @@ namespace Blacklighting.Tools
         /// <returns>A base64 string of the hash value</returns> 
         public string GenerateSignature(Uri url, string consumerKey, 
             string consumerSecret, string token, string tokenSecret, 
-            string httpMethod, string timeStamp, string nonce, 
+            string httpMethod, string timeStamp, string nonce, string oauthCallback,
             out string normalizedUrl, out string normalizedRequestParameters, 
             out string authHeader)
         {
@@ -304,26 +307,31 @@ namespace Blacklighting.Tools
             normalizedRequestParameters = null;
             authHeader = null;
 
-            string signatureBase = GenerateSignatureBase(url, consumerKey, token, tokenSecret, httpMethod, timeStamp, nonce, HMACSHA1SignatureType, out normalizedUrl, out normalizedRequestParameters);
+            string signatureBase = GenerateSignatureBase(url, consumerKey, token, tokenSecret, httpMethod, timeStamp, nonce, HMACSHA1SignatureType, oauthCallback, out normalizedUrl, out normalizedRequestParameters);
 
             HMACSHA1 hmacsha1 = new HMACSHA1();
             hmacsha1.Key = Encoding.UTF8.GetBytes(string.Format("{0}&{1}", UrlEncode(consumerSecret), string.IsNullOrEmpty(tokenSecret) ? "" : UrlEncode(tokenSecret)));
 
             string signature = GenerateSignatureUsingHash(signatureBase, hmacsha1);
 
-            StringBuilder auth = new StringBuilder();
-            auth.AppendFormat("{0}=\"{1}\", ", OAuthConsumerKeyKey, UrlEncode(consumerKey));
-            auth.AppendFormat("{0}=\"{1}\", ", OAuthNonceKey, UrlEncode(nonce));
-            auth.AppendFormat("{0}=\"{1}\", ", OAuthSignatureKey, UrlEncode(signature));
-            auth.AppendFormat("{0}=\"{1}\", ", OAuthSignatureMethodKey, HMACSHA1SignatureType);
-            auth.AppendFormat("{0}=\"{1}\", ", OAuthTimestampKey, timeStamp);
-            auth.AppendFormat("{0}=\"{1}\", ", OAuthTokenKey, UrlEncode(token));
+            StringBuilder auth = new StringBuilder("OAuth ");
+            auth.AppendFormat("{0}=\"{1}\",", OAuthCallbackKey, UrlEncode(oauthCallback));
+            auth.AppendFormat("{0}=\"{1}\",", OAuthConsumerKeyKey, UrlEncode(consumerKey));
+            auth.AppendFormat("{0}=\"{1}\",", OAuthSignatureKey, UrlEncode(signature));
+            auth.AppendFormat("{0}=\"{1}\",", OAuthNonceKey, UrlEncode(nonce));
+            auth.AppendFormat("{0}=\"{1}\",", OAuthTimestampKey, timeStamp);
+            auth.AppendFormat("{0}=\"{1}\",", OAuthSignatureMethodKey, HMACSHA1SignatureType);
+            auth.AppendFormat("{0}=\"{1}\",", OAuthTokenKey, UrlEncode(token));
             auth.AppendFormat("{0}=\"{1}\"", OAuthVersionKey, "1.0");
             authHeader = auth.ToString();
 
             return signature;
 
         }
+
+    
+
+
 
         /// <summary> 
         /// Generate the timestamp for the signature         
