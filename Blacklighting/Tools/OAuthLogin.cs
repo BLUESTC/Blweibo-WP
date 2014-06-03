@@ -37,14 +37,12 @@ namespace Blacklighting.Tools
 
             return result;
         }
-
-        //获取Request Token
-        string responseBody;
+       
+        String responseBody;
         static Uri url = new Uri(API.OAUTH_REQUEST_TOKEN_API);
-        StringBuilder sb = new StringBuilder(url.ToString());
         StringBuilder oauthHeader = new StringBuilder();
-
-        public async void  getRequestToken()
+        //获取Request Token
+        public void getRequestToken()
         {
             string nonce = oauth.GenerateNonce();
             string timeStamp = oauth.GenerateTimeStamp();
@@ -64,68 +62,36 @@ namespace Blacklighting.Tools
             oauthHeader.Append("oauth_timestamp=\"" + timeStamp + "\",");
             oauthHeader.Append("oauth_nonce=\"" + nonce + "\",");
             oauthHeader.Append("oauth_version=\"" + "1.0\",");
-            oauthHeader.Append("oauth_signature=\"" + sig+"\"");
-            //构造请求Request Token的url
-
-
-
-            //sb.AppendFormat("?oauth_callback=oob&");
-            //sb.AppendFormat("oauth_consumer_key={0}&", APP_KEY);
-            //sb.AppendFormat("oauth_signature_method={0}&", "HMAC-SHA1");
-            //sb.AppendFormat("oauth_timestamp={0}&", timeStamp);
-            //sb.AppendFormat("oauth_nonce={0}&", nonce);
-            //sb.AppendFormat("oauth_version={0}&", "1.0");
-            //sb.AppendFormat("oauth_signature={0}", sig);
-
+            oauthHeader.Append("oauth_signature=\""  + sig+"\"");
+        
             //请求Request Token
-
             HttpWebRequest request = null;
             try
             {
+                //构造请求Request Token的url
                 request = (HttpWebRequest)WebRequest.Create(url.ToString()+"?oauth_callback=oob");
                 request.Method = "POST";
                 request.Headers["Authorization"] = oauthHeader.ToString();
 
                 //request.BeginGetRequestStream(new AsyncCallback(GetResponseCallback), request);
                 request.BeginGetRequestStream(new AsyncCallback(GetRequestStreamCallback), request);
-                //response = await request.GetResponseAsync();
-                //StreamReader stream = new StreamReader(response.GetResponseStream(), Encoding.UTF8);
-                //responseBody = stream.ReadToEnd();
-                //stream.Close();
-                //response.Close();
             }
 
             catch (Exception e)
             {
                 String error = e.ToString();
-
             }
 
-            ////解析返回的 Request Token 和 Request Token Secret
-            //Dictionary<string, string> responseValues = parseResponse(responseBody);
-            //requestToken = responseValues["oauth_token"];
-            //requestTokenSecret = responseValues["oauth_token_secret"];
         }
 
         public void GetRequestStreamCallback(IAsyncResult asyncResult)
         {
             HttpWebRequest request = (HttpWebRequest)asyncResult.AsyncState;
 
-            //Stream postStream = request.EndGetRequestStream(asyncResult);
-
-            //StringBuilder postData = new StringBuilder();
-            //postData.Append("oauth_callback=oob");
-            //byte[] byteArray = Encoding.UTF8.GetBytes(postData.ToString());
-            //postStream.Write(byteArray, 0, postData.Length);
-            
-            
-            //postStream.Close();
-
             request.BeginGetResponse(new AsyncCallback(GetResponseCallback), request);
         }
-
-
-        void GetResponseCallback(IAsyncResult asynchronousResult)
+        
+        public void GetResponseCallback(IAsyncResult asynchronousResult)
         {
             HttpWebRequest webRequest = null;
             HttpWebResponse response = null;
@@ -133,12 +99,11 @@ namespace Blacklighting.Tools
             try
             {
                 webRequest = (HttpWebRequest)asynchronousResult.AsyncState;
-                //response = await webRequest.GetResponseAsync();
                 // End the get response operation 
                 response = (HttpWebResponse)webRequest.EndGetResponse(asynchronousResult);
                 Stream streamResponse = response.GetResponseStream();
                 StreamReader streamReader = new StreamReader(streamResponse);
-                String Response = streamReader.ReadToEnd();
+                responseBody = streamReader.ReadToEnd();
                 //outputbox.Text = Response.ToString(); 
                 streamResponse.Close();
                 streamReader.Close();
@@ -146,14 +111,16 @@ namespace Blacklighting.Tools
 
             }
             catch (WebException e)
-            {
-                
+            {             
                 // Error treatment 
                 Stream postStream = e.Response.GetResponseStream();
                 StreamReader stream = new StreamReader(postStream, Encoding.UTF8);
-                String responseBody = stream.ReadToEnd();
+                responseBody = stream.ReadToEnd();
                 Console.WriteLine(responseBody);
             }
         }
+
+        //解析返回的 Request Token 和 Request Token Secret
+        
     }
 }

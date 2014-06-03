@@ -143,8 +143,6 @@ namespace Blacklighting.Tools
             return result;
         }
 
- 
-
         /// <summary> 
         /// This is a different Url Encode implementation since the default .NET one outputs the percent encoding in lower case. 
         /// While this is not a problem with the percent encoding spec, it is used in upper case throughout OAuth 
@@ -164,25 +162,7 @@ namespace Blacklighting.Tools
             value = value.Replace("%7E", "~");
             return value;
         }
-        /*protected string UrlEncode(string value)
-        {
-            StringBuilder result = new StringBuilder();
-
-            foreach (char symbol in value)
-            {
-                if (unreservedChars.IndexOf(symbol) != -1)
-                {
-                    result.Append(symbol);
-                }
-                else
-                {
-                    result.Append('%' + String.Format("{0:X2}", (int)symbol));
-                }
-            }
-
-            return result.ToString();
-        }*/ 
-
+        
         /// <summary> 
         /// Normalizes the request parameters according to the spec 
         /// </summary> 

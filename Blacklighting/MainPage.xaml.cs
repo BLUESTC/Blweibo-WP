@@ -22,7 +22,6 @@ namespace Blacklighting
         {
             OAuthLogin oAuthLogin = new OAuthLogin();
             oAuthLogin.getRequestToken();
-            
         }
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)

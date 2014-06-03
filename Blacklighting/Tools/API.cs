@@ -15,11 +15,10 @@ namespace Blacklighting
 
     class API
     {
-        public const String CONSUMER_KEY = "542e73764c164bb898960c16f5ff5d78";
-        public const String CONSUMER_SECRET = "e79cf868071ab74b1932f0e6dfdcf09b";
+        public const String CONSUMER_KEY = "cec2b3a985fea921fc600a00471b6d3f";
+        public const String CONSUMER_SECRET = "8d2754dc4e8d0ebf8583be1d878b9319";
         public const String API_FORMAT = "json";
- //       public const String API_ROOT = "http://studio.scie.in/blacklighting/BLK/statusnet-1.1.1/index.php/api/";
-        public const String API_ROOT = "http://localhost/statusnet/index.php/api/";
+        public const String API_ROOT = "http://studio.scie.in/blacklighting/BLK/statusnet-1.1.1/index.php/api/";
         // 以下是twitter 移植API，注意，有些没有实现
         // 详见 http://status.net/wiki/Twitter-compatible_API
         // Timeline resources
